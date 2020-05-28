@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Archanissimum</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="Contact.html" class="item-link">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+                <li class="nav-item">
+                    <a href="Biblia.html" class="item-link">Bíblia</a>
+                </li>
+            <li>
+                <a href="Enciclopedia.html" class="item-link">Enciclopedia</a>
+            </li>
+            <li class="nav-item">
+                <a href="Index.html" class="item-link">Inicio</a>
+            </li>     
+            <li class="logo">
+                A
+            </li>                         
+        </ul>
+    </nav>
+    <div class="content">
+    <div class="banner">
+        <a href="Biblia.html" class="mySlides"><img class="SImg" src="img/banner 1.png"></a>
+        <a href="#" class="mySlides" onclick="OpenModal('juego1')"><img class="SImg" src="img/banner 2.png"></a>
+        <a href="https://summarerum.000webhostapp.com/" class="mySlides"><img class="SImg" src="img/banner 3.png"></a>
+    </div>
+    <div class="separador"><hr></div>
+    <div class="productview">
+        <img class="product" src="img/poster game 1.png" onclick="OpenModal('juego1')">
+        <img class="product" src="img/comic.jpeg" onclick="OpenModal('comic')">        
+        <img class="product cartas" src="img/portada cartas.jpeg"  onclick="OpenModal('juegoC')">
+        <img class="product" src="img/poster game 2.png"  onclick="OpenModal('juego2')">
+        <img class="product" src="img/web.jpeg"  onclick="OpenModal('web')">
+    </div>
+    <div class="separador"><hr></div>
+    <div class="informer">
+        <img src="img/logos1.png" alt="Logo Archanissimum" style="display: inline-block;">
+        <div class="infoText" style="display: inline-block;">
+            <h4>Bienvenid@ al universo de Archanissimum</h4>
+            <p>Bienvenid@ al sitio web oficial de Archanissimum, aqui encontrarás todo el contenido relacionado con éste universo mágico</p>
+        </div>
+    </div>
+</div>
+<div class="modal-bg" id="modal-bg">
+    <div class="modal-content">
+        <span class="close" onclick="CloseModal()">&times;</span>
+        <img src="img/comic.jpeg" id="modal-cover" alt="portada" >
+        <p id="modal-info"></p>
+    </div>
+</div>
+<footer>
+    <div class="footernav" style="display: inline-block;">
+        <ul class="fnav">
+            <li class="fnav-item"><a href="Index.html" class="item-link">Inicio</a></li>
+            <li class="fnav-item"><a href="Enciclopedia.html" class="item-link">Enciclopedia</a></li>
+            <li class="fnav-item"><a href="Biblia.html" class="item-link">Bíblia</a></li>
+            <li class="fnav-item"><a href="Contact.html" class="item-link">Contáctanos</a></li>
+        </ul>
+    </div>
+    <div class="socialmedia" style="display: inline-block;">
+        <ul class="socialList">
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-006_facebook.png" alt="Facebook"></a>
+            </li>
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-023_whatsapp.png" alt="Whatsapp"></a>
+            </li>
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-005_twitter.png" alt="Twitter"></a>
+            </li>
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-038_instagram.png" alt="Instagram"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script src="slider.js"></script>
+<script src="modal.js"></script>
+</html>

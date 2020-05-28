@@ -1,0 +1,336 @@
+@font-face{
+    font-family: Planewalker;
+    src: url(fonts/Planewalker.otf);
+
+}
+
+@keyframes fade {
+    from {filter: opacity(0);}
+    to {filter: opacity(1);}
+  }
+
+body{
+    font-family: Planewalker;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url(background.png);
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    position: sticky;
+}
+
+.navbar-nav{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    height: 3rem;
+    align-content: flex-end; 
+    align-items: center;
+}
+.navbar-nav a, .fnav a{
+    font-family: Planewalker, serif;
+}
+
+.item-link:hover{
+    color: white;
+}
+
+.item-link{
+    border-right: 1px solid goldenrod ;
+    color: goldenrod;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    height: 100%;
+}
+
+.fnav li{
+    padding-top: 1rem;
+    font-size: 14pt;
+}
+
+.logo{
+    font-size: 20pt;
+}
+
+.content{
+    /* margin-top: 3rem; */
+    width: 100%;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productview{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.product{
+    padding: 5px 2.5px;
+    width: 15%;
+    transition: ease 200ms;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cartas{
+    width: 18%;
+}
+
+.creators{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    transition: ease 200ms;
+}
+
+
+.product:hover, .creators:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+hr{
+
+    border: 1px solid red;
+    
+}
+
+.footernav{
+    width: 30%;
+}
+
+.socialmedia{
+    height: 100%;
+    width: 60%;
+}
+
+.socialList{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.socialitem{
+    margin-right: 20px;
+    padding: 10px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    
+}
+
+.socialitem:hover{
+    background-color: white
+}
+
+.socialitem img{
+    height: 32px;
+}
+
+.infoText{
+    width: 50%;
+    text-align: center;
+}
+.informer img{
+    width: 20%;
+}
+.informer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: white;
+    font-size: 14pt;
+}
+
+h4, h1{
+    color: goldenrod;
+    font-size: 18pt;
+}
+
+.creatorsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.show{
+    flex-direction: row;
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.452);
+    border-top: 1px solid blue;
+    width: 100%;
+}
+
+.SImg{
+    height: 25rem;
+    animation-name: fade;
+    animation-duration: 500ms;
+}
+
+.modal-bg{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content{
+    color: black;
+    position: relative;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+}
+
+.modal-content p{
+    
+    padding: 5px;
+    color: black;
+}
+
+.modal-content img{
+    width: 50%;
+    
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14pt;
+    padding: 10px;
+}
+
+.close:hover{
+    color: slateblue;
+    cursor: pointer;
+}
+
+.cardview{
+    padding: 10px;
+}
+
+.card{
+    width: 100%;
+}
+
+#cardCover{
+    width: 35%;
+}
+
+#content{
+    padding: 20px;
+    width: 90%;
+    margin: 0;
+}
+.first{
+    max-width: 55%;
+    margin: 15px;
+    display: inline-block;
+}
+
+/* Escritorio */
+@media only screen and (min-width: 670px){
+    .productview{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .item-link{
+        font-size: 16pt;
+    }
+
+    .informer{
+        margin: 2rem 0;
+    }
+    .modal-content p{
+        max-width: 64%;
+    }
+
+}
+/* Movil */
+@media only screen and (max-width: 670px){
+    .product{
+        width: 18%;
+    }
+
+    .item-link{
+        font-size: 10pt;
+    }
+
+    .socialmedia{
+        height: auto;
+        width: fit-content;
+    }
+
+    .socialitem{
+        display: inline-flex;
+        width: fit-content;
+    }
+
+    .socialitem img{
+        height: 16px;
+    }
+    .informer img{
+        width: 35%;
+    }
+    p{
+        font-size: 10pt;
+    }
+    h4{
+        font-size: 12pt;
+    }
+    
+    .SImg{
+        height: auto;
+        width: 100%;
+        
+    }
+
+    .show{
+        flex-direction: column;
+    }
+
+    .modal-content{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .modal-content p{
+        width: 80%;
+    }
+
+    .modal-content img{
+        width: 65%;
+    }
+}

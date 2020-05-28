@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Archanissimum</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="Contact.html" class="item-link">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="item-link">Bíblia</a>
+            </li>   
+            <li class="nav-item">
+                <a href="Enciclopedia.html" class="item-link">Enciclopedia</a>
+            </li>   
+            <li class="nav-item">
+                <a href="Index.html" class="item-link">Inicio</a>
+            </li>     
+            <li class="logo">
+                A
+            </li>                         
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="cardview">
+            <div class="product" onclick="ShowCard('Abrazo')"><img class="card" src="cartas/Abrazo del avismo.png" alt="Abrazo del avismo"><p>Abrazo del avismo</p></div>
+            <div class="product" onclick="ShowCard('Apocalipsis')"><img class="card" src="cartas/Apocalipsis.png" alt="Apocalipsis"><p>Apocalipsis</p></div>
+            <div class="product" onclick="ShowCard('Artiros')"><img class="card" src="cartas/Artiros.png" alt="Artiros"><p>Artiros</p></div>
+            <div class="product" onclick="ShowCard('Bendicion')"> <img class="card" src="cartas/Bendicion del norte.png" alt="Bendicion del norte"><p>Bendicion del norte</p></div>
+            <div class="product" onclick="ShowCard('Gitanas')"><img class="card" src="cartas/Gitanas.png" alt="Gitanas"><p>Gitanas</p></div>
+            <div class="product" onclick="ShowCard('Locus')"><img class="card" src="cartas/locus origin.png" alt="locus origin"><p>Locus origin</p></div>
+            <div class="product" onclick="ShowCard('Merlin')"><img class="card" src="cartas/Merlin.png" alt="Merlin"><p>Merlín</p></div>
+            <div class="product" onclick="ShowCard('Nacimiento')"><img class="card" src="cartas/Nacimiento de la tierra.png" alt="Nacimiento de la tierra"><p>Nacimiento de la tierra</p></div>
+            <div class="product" onclick="ShowCard('Rakad')"><img class="card" src="cartas/Rakad.png" alt="Rakad"><p>Rakad</p></div>
+            <div class="product" onclick="ShowCard('Sonabit')"><img class="card" src="cartas/Sonabit.png" alt="Sonabit"><p>Sonabit</p></div>
+            <div class="product" onclick="ShowCard('Tumba')"><img class="card" src="cartas/Tumba.png" alt="Tumba"><p>Tumba</p></div>
+            <div class="product" onclick="ShowCard('Zuhurros')"><img class="card" src="cartas/Zuhurros.png" alt="Zuhurros"><p>Zuhurros</p></div>
+        </div>
+    
+</div>
+
+<footer>
+    <div class="footernav" style="display: inline-block;">
+        <ul class="fnav">
+            <li class="fnav-item"><a href="Index.html" class="item-link">Inicio</a></li>
+            <li class="fnav-item"><a href="Enciclopedia.html" class="item-link">Enciclopedia</a></li>
+            <li class="fnav-item"><a href="Productos.html" class="item-link">Bíblia</a></li>
+            <li class="fnav-item"><a href="Contact.html" class="item-link">Contáctanos</a></li>
+        </ul>
+    </div>
+    <div class="socialmedia" style="display: inline-block;">
+        <ul class="socialList">
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-006_facebook.png" alt="Facebook"></a>
+            </li>
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-023_whatsapp.png" alt="Whatsapp"></a>
+            </li>
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-005_twitter.png" alt="Twitter"></a>
+            </li>
+            <li class="socialitem">
+                <a href="#"><img src="icons/social-038_instagram.png" alt="Instagram"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script>
+    function ShowCard(card){
+        localStorage.setItem("selectedcard", card);
+        window.location = "Carta.html"
+    }
+</script>
+</html>
